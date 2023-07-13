@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  web:
+    ports:
+      - "1000:80"
+    container_name: undangan1
+    image: php:7.4-apache
+    restart: unless-stopped
+    volumes:
+      - ./web:/var/www/html/
+    networks:
+      - code_net
+
+networks:
+  code_net:
+    external: true
