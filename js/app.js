@@ -675,8 +675,8 @@ const opacity = () => {
         clearInterval(clear);
         document.getElementById("loading").remove();
         document.getElementById("exampleModal").classList.add("fade");
-        var audio = new Audio("/web/assets/music/pendahuluan_cewe.mp3");
-        audio.play();
+        // var audio = new Audio("/web/assets/music/pendahuluan_cewe.mp3");
+        // audio.play();
       }
     }, 10);
   });
